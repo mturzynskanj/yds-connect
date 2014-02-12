@@ -13,8 +13,8 @@ angular.module('ydsConnectApp', [
       })
       .when('/newRegistration',
         {
-            templateUrl:'templates/newRegistration.html',
-            controller: 'Registration'
+            templateUrl:'views/newRegistration.html',
+            controller: 'RegistrationCtrl'
         })
       .otherwise({
         redirectTo: '/'
