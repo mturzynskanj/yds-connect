@@ -11,8 +11,13 @@ angular.module('ydsConnectApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/newRegistration',
+        {
+            templateUrl:'templates/newRegistration.html',
+            controller: 'Registration'
+        })
       .otherwise({
         redirectTo: '/'
       });
-    $locationProvider.html5Mode(true);
+//    $locationProvider.html5Mode(true);
   });

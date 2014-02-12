@@ -27,13 +27,14 @@ module.exports = function (grunt) {
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
-      js: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
-        tasks: ['newer:jshint:all'],
-        options: {
-          livereload: true
-        }
-      },
+//      js: {
+//        files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
+//        tasks: ['newer:jshint:all'],
+//        options: {
+//          livereload: true,
+//          indent: false
+//        }
+//      },
       jsTest: {
         files: ['test/spec/{,*/}*.js'],
         tasks: ['newer:jshint:test', 'karma']
@@ -95,7 +96,8 @@ module.exports = function (grunt) {
     jshint: {
       options: {
         jshintrc: '.jshintrc',
-        reporter: require('jshint-stylish')
+        reporter: require('jshint-stylish'),
+        indent: false
       },
       all: [
         'Gruntfile.js',
