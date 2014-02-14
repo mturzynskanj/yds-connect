@@ -35,27 +35,27 @@ module.exports = function (grunt) {
 //          indent: false
 //        }
 //      },
-      jsTest: {
-        files: ['test/spec/{,*/}*.js'],
-        tasks: ['newer:jshint:test', 'karma']
-      },
+//      jsTest: {
+//        files: ['test/spec/{,*/}*.js'],
+//        tasks: ['newer:jshint:test', 'karma']
+//      },
       compass: {
         files: ['<%= yeoman.app %>/scss/{,*/}*.{scss,sass}'],
         tasks: ['compass:server', 'autoprefixer']
       },
       gruntfile: {
         files: ['Gruntfile.js']
-      },
-      livereload: {
-        options: {
-          livereload: '<%= connect.options.livereload %>'
-        },
-        files: [
-          '<%= yeoman.app %>/{,*/}*.html',
-          '<%= yeoman.app %>/css/{,*/}*.css',
-          '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
-        ]
       }
+//      livereload: {
+//        options: {
+//          livereload: '<%= connect.options.livereload %>'
+//        },
+//        files: [
+//          '<%= yeoman.app %>/{,*/}*.html',
+//          '<%= yeoman.app %>/css/{,*/}*.css',
+//          '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+//        ]
+//      }
     },
 
     // The actual grunt server settings
