@@ -1,5 +1,25 @@
 'use strict';
 
+$(function () {
+    var $body = $("body");
+    $body.on('change', "input, select", function () {
+        var $this = $(this);
+
+        if (this.value !== "") {
+            $this.addClass('filled');
+        } else {
+            $this.removeClass('filled');
+        }
+    });
+
+    $body.on('reset', "form", function () {
+        var $this = $(this);
+
+        $this.find("input").removeClass("filled");
+    });
+});
+
+
 angular.module('ydsConnectApp', [
   'ngResource',
   'ngSanitize',

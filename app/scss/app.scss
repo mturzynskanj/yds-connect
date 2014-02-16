@@ -1,0 +1,16 @@
+//bootstap settings defined in settings.scss which will be imported in bootstrap.scss
+@import 'sass-bootstrap/lib/bootstrap';
+
+/*partials*/
+@import "main";
+@import "general";
+@import "bootstrap_overrides";
+@import "form";
+@import "floating-labels";
+body {
+	background-color: $color-brown3;
+}
+
+.entypo {
+	color: $color-grey1;
+}
