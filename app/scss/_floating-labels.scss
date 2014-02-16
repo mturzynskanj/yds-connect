@@ -12,7 +12,6 @@ $input-placeholder-color: $color-grey2;
 		top: 15%;
 		color: $input-placeholder-color;
 		margin-left: 10%;
-		font-weight: normal;
 		z-index:1;
 		@include transition(all 0.2s);
 	}
@@ -21,7 +20,7 @@ $input-placeholder-color: $color-grey2;
 	.form-control.filled {
 		+ label {
 			top: -0.8rem;
-			font-size: 11px;
+			@include fontSize(11px);
 			color: $color-blue1;
 		}
 	}

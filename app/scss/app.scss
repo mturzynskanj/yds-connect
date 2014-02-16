@@ -2,15 +2,9 @@
 @import 'sass-bootstrap/lib/bootstrap';
 
 /*partials*/
+@import "mixins";
 @import "main";
 @import "general";
 @import "bootstrap_overrides";
 @import "form";
 @import "floating-labels";
-body {
-	background-color: $color-brown3;
-}
-
-.entypo {
-	color: $color-grey1;
-}

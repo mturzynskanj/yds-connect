@@ -1,7 +1,43 @@
+body {
+	background-color: $color-brown3;
+}
+
+.entypo {
+	color: $color-grey1;
+}
+
 .app-title {
 	font-family: $font-family-app-title;
-	font-size: 3.5rem;
+	@include fontSize(40px);
 	color: $color-grey1;
 	text-align: center;
 	font-style: italic;
+}
+
+p {
+	padding: 0 15px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.info-blob {
+	@include fontSize(12px);
+	color: $color-brown1;
+}
+
+.info-secondary,
+.info-header {
+	margin-top: 25px;
+}
+
+.info-header {
+	text-transform: uppercase;
+}
+
+.password-toggle {
+	position: absolute;
+	right: 10px;
+	top: 5px;
 }
