@@ -19,7 +19,6 @@
 		position: absolute;
 		left: 0;
 		top: 5px;
-		@include fontSize(18px);
 	}
 
 	.navbar-right {
@@ -36,12 +35,12 @@
 		display: block;
 		width: 100%;
 		text-align: center;
-		@include fontSize(28px);
+		@include fontSize(24px);
 		padding-top: 5px;
 	}
 
 	.entypo {
-		@include fontSize(32px);
+		@include fontSize(36px);
 	}
 }
 

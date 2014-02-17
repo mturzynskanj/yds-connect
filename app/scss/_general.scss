@@ -19,17 +19,19 @@ p {
 }
 
 .bold {
-	font-weight: bold;
+	font-family: $font-family-base;
 }
 
 .info-blob {
 	@include fontSize(16px);
 	color: $color-brown1;
+	font-family: $font-family-secondary;
 }
 
 .info-secondary,
 .info-header {
 	margin-top: 25px;
+	font-family: $font-family-secondary;
 }
 
 .info-header {
