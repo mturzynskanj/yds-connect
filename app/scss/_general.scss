@@ -23,7 +23,7 @@ p {
 }
 
 .info-blob {
-	@include fontSize(12px);
+	@include fontSize(16px);
 	color: $color-brown1;
 }
 
@@ -40,4 +40,8 @@ p {
 	position: absolute;
 	right: 10px;
 	top: 5px;
+}
+
+label {
+	font-weight: normal;
 }

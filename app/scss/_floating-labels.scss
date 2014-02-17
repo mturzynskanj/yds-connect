@@ -20,7 +20,7 @@ $input-placeholder-color: $color-grey2;
 	.form-control.filled {
 		+ label {
 			top: -0.8rem;
-			@include fontSize(11px);
+			@include fontSize(14px);
 			color: $color-blue1;
 		}
 	}

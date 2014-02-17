@@ -560,7 +560,7 @@ cite {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_type\.scss}line{font-family:\0000379}}
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "latoregular", sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -2291,26 +2291,53 @@ output {
   vertical-align: middle;
   background-color: white;
   background-image: none;
-  border: none;
-  border-bottom: 1px solid #d4d4d4;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003152}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_mixins\.scss}line{font-family:\00003833}}
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_mixins\.scss}line{font-family:\0000357}}
+.form-control:-moz-placeholder {
+  color: #999999;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_mixins\.scss}line{font-family:\0000358}}
+.form-control::-moz-placeholder {
+  color: #999999;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_mixins\.scss}line{font-family:\0000359}}
+.form-control:-ms-input-placeholder {
+  color: #999999;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_mixins\.scss}line{font-family:\0000360}}
+.form-control::-webkit-input-placeholder {
+  color: #999999;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003149}}
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
   cursor: not-allowed;
   background-color: #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003158}}
 textarea.form-control {
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003168}}
 .form-group {
   margin-bottom: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003181}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003178}}
 .radio,
 .checkbox {
   display: block;
@@ -2320,7 +2347,7 @@ textarea.form-control {
   padding-left: 20px;
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003188}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003185}}
 .radio label,
 .checkbox label {
   display: inline;
@@ -2329,7 +2356,7 @@ textarea.form-control {
   cursor: pointer;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003198}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003195}}
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
@@ -2338,13 +2365,13 @@ textarea.form-control {
   margin-left: -20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003203}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003200}}
 .radio + .radio,
 .checkbox + .checkbox {
   margin-top: -5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003209}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003206}}
 .radio-inline,
 .checkbox-inline {
   display: inline-block;
@@ -2355,14 +2382,14 @@ textarea.form-control {
   cursor: pointer;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003215}}
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
   margin-top: 0;
   margin-left: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003233}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003230}}
 input[type="radio"][disabled], fieldset[disabled] input[type="radio"],
 input[type="checkbox"][disabled], fieldset[disabled]
 input[type="checkbox"],
@@ -2513,12 +2540,12 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
   background-color: #dff0d8;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003268}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003265}}
 .form-control-static {
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003278}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003275}}
 .help-block {
   display: block;
   margin-top: 5px;
@@ -2527,17 +2554,17 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 }
 
 @media (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003303}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003300}}
   .form-inline .form-group, .navbar-form .form-group {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003307}}
   .form-inline .form-control, .navbar-form .form-control {
     display: inline-block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003315}}
   .form-inline .radio, .navbar-form .radio,
   .form-inline .checkbox,
   .navbar-form .checkbox {
@@ -2546,7 +2573,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
     margin-bottom: 0;
     padding-left: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003322}}
   .form-inline .radio input[type="radio"], .navbar-form .radio input[type="radio"],
   .form-inline .checkbox input[type="checkbox"],
   .navbar-form .checkbox input[type="checkbox"] {
@@ -2555,7 +2582,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003342}}
 .form-horizontal .control-label,
 .form-horizontal .radio,
 .form-horizontal .checkbox,
@@ -2565,7 +2592,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
   margin-bottom: 0;
   padding-top: 7px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003349}}
 .form-horizontal .form-group {
   margin-left: -15px;
   margin-right: -15px;
@@ -2581,12 +2608,12 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 .form-horizontal .form-group:after {
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003353}}
 .form-horizontal .form-control-static {
   padding-top: 7px;
 }
 @media (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_forms\.scss}line{font-family:\00003359}}
   .form-horizontal .control-label {
     text-align: right;
   }
@@ -5057,15 +5084,15 @@ input[type="button"].btn-block {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_navbar\.scss}line{font-family:\00003360}}
 .navbar-default {
   background-color: #da4f1a;
-  border-color: #e7e7e7;
+  border-color: #bc4416;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_navbar\.scss}line{font-family:\00003364}}
 .navbar-default .navbar-brand {
-  color: #777777;
+  color: white;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_navbar\.scss}line{font-family:\00003367}}
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #e6e6e6;
   background-color: transparent;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_navbar\.scss}line{font-family:\00003373}}
@@ -5084,7 +5111,7 @@ input[type="button"].btn-block {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_navbar\.scss}line{font-family:\00003390}}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #555555;
-  background-color: #e7e7e7;
+  background-color: #bc4416;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_navbar\.scss}line{font-family:\00003398}}
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
@@ -5106,7 +5133,7 @@ input[type="button"].btn-block {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_navbar\.scss}line{font-family:\00003417}}
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+  border-color: #bc4416;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_navbar\.scss}line{font-family:\00003425}}
 .navbar-default .navbar-nav > .dropdown > a:hover .caret,
@@ -5116,7 +5143,7 @@ input[type="button"].btn-block {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_navbar\.scss}line{font-family:\00003434}}
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #e7e7e7;
+  background-color: #bc4416;
   color: #555555;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_navbar\.scss}line{font-family:\00003437}}
@@ -5142,7 +5169,7 @@ input[type="button"].btn-block {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_navbar\.scss}line{font-family:\00003463}}
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555555;
-    background-color: #e7e7e7;
+    background-color: #bc4416;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/bower_components\/sass-bootstrap\/lib\/_navbar\.scss}line{font-family:\00003471}}
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -7659,8 +7686,8 @@ p {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_general\.scss}line{font-family:\0000325}}
 .info-blob {
-  font-size: 12px;
-  font-size: 0.8571428571rem;
+  font-size: 16px;
+  font-size: 1.1428571429rem;
   color: #b1aa9f;
 }
 
@@ -7680,6 +7707,11 @@ p {
   position: absolute;
   right: 10px;
   top: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_general\.scss}line{font-family:\0000345}}
+label {
+  font-weight: normal;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\000031}}
@@ -7707,59 +7739,62 @@ p {
   position: absolute;
   left: 0;
   top: 5px;
+  font-size: 18px;
+  font-size: 1.2857142857rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000325}}
 .navbar-fixed-top .navbar-right {
   position: absolute;
   right: 0;
   top: 5px;
   font-family: "latobold";
-  font-size: 16px;
-  font-size: 1.1428571429rem;
+  font-size: 18px;
+  font-size: 1.2857142857rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000333}}
 .navbar-fixed-top .navbar-text {
   margin: 0 auto;
   text-transform: uppercase;
   display: block;
   width: 100%;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 28px;
+  font-size: 2rem;
   padding-top: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000343}}
 .navbar-fixed-top .entypo {
-  font-size: 18px;
-  font-size: 1.2857142857rem;
+  font-size: 32px;
+  font-size: 2.2857142857rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000348}}
 .panel {
   margin-bottom: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000350}}
 .panel .panel-body {
   padding: 15px 15px 0 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000353}}
 .panel .panel-body .form-inline .form-group, .panel .panel-body .navbar-form .form-group {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000356}}
 .panel .panel-body div:last-child {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000360}}
 .panel .panel-body div:last-child input,
 .panel .panel-body div:last-child select {
   border: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000367}}
 .panel-heading {
   padding: 10px 10px 2px 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_bootstrap_overrides\.scss}line{font-family:\0000370}}
 .panel-heading .panel-title {
   color: #b1aa9f;
   font-size: 12px;
@@ -7790,14 +7825,18 @@ p {
   height: 32px;
   z-index: 2;
   outline: none;
+  border: none;
+  border-bottom: 1px solid #d4d4d4;
+  border-radius: 0;
+  box-shadow: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_form\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_form\.scss}line{font-family:\0000323}}
 .form-group .form-control:focus,
 .form-inline .form-control:focus,
 .navbar-form .form-control:focus {
   outline: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_form\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_form\.scss}line{font-family:\0000328}}
 .form-group select,
 .form-inline select,
 .navbar-form select {
@@ -7807,7 +7846,7 @@ p {
   background-position-y: center;
   border-radius: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_form\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_form\.scss}line{font-family:\0000337}}
 .form-group select:hover,
 .form-inline select:hover,
 .navbar-form select:hover {
@@ -7815,7 +7854,7 @@ p {
   background-position-x: 97%;
   background-position-y: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_form\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_form\.scss}line{font-family:\0000346}}
 .form-group .form-small-column,
 .form-inline .form-small-column,
 .navbar-form .form-small-column {
@@ -7823,7 +7862,7 @@ p {
   width: 30%;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_form\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_form\.scss}line{font-family:\0000352}}
 .form-group .form-lg-column,
 .form-inline .form-lg-column,
 .navbar-form .form-lg-column {
@@ -7831,7 +7870,7 @@ p {
   float: left;
   margin-right: -15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_form\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hetalthakkar\/Sites\/yds-connect\/app\/scss\/_form\.scss}line{font-family:\0000357}}
 .form-group .form-lg-column label,
 .form-inline .form-lg-column label,
 .navbar-form .form-lg-column label {
@@ -7861,7 +7900,7 @@ p {
 .form-group input:focus + label,
 .form-group .form-control.filled + label {
   top: -0.8rem;
-  font-size: 11px;
-  font-size: 0.7857142857rem;
+  font-size: 14px;
+  font-size: 1rem;
   color: #4a90e2;
 }
