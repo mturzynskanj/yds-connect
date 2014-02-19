@@ -1,0 +1,70 @@
+DAD.Directive.directive("numberOnly", function(){
+	return {
+		restrict: 'A',
+		require: 'ngModel',
+		link: function (scope, elem, attrs, ctrl) {
+			ctrl.$parsers.push(function (inputValue) {
+				if(inputValue == undefined) return ''
+				var transformedInput = inputValue.replace(/[^0-9]/g, '');
+				if (transformedInput != inputValue) {
+					ctrl.$serViewValue(transformedInput);
+					ctrl.$render();
+				}
+				return transformedInput;
+			});
+		}
+	};
+});
+
+
+
+
+angular.module('test',[]).directive('validNumber', function(){
+	return {
+		restrict: 'A',
+		require: 'ngModel',
+		link: function (scope, elem, attrs, ctrl) {
+			ctrl.$parsers.push(function (value) {
+                alert(value);
+				if(value == undefined) return ''
+				var transformedInput = inputValue.replace(/[^0-9]/g, '');
+                alert(transformedInput);alert(inputValue);
+				if (transformedInput != inputValue) {
+					ctrl.$serViewValue(transformedInput);
+					ctrl.$render();
+				}
+				return transformedInput;
+			});
+		}
+	};
+});
+
+
+
+
+DAD.Directive.directive("ngRequire", function(){
+    return {
+        require: 'ngModel',
+        link: function (scope, elem, attrs, ctrl, ngModelCtrl) {
+          elem.on('change',function(event) {
+              scope.@apply(dovalidation);
+          });
+          elem.on('blur', function(event) {
+             scope.$apply(dovalidaton);
+          }0;
+
+          scope.$on('$validate', dovalidation);
+          function (dovalidation() {
+              if(elem.val() > 0) {
+                  ctrl.$setValidity('require',true);
+              }
+              else {
+                  ctrl.$setValidity('require',false);
+              }
+            };
+         }
+      };
+ });
+ 
+
+
