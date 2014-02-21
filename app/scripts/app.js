@@ -41,6 +41,12 @@ angular.module('ydsConnectApp', [
             templateUrl:'views/choosePassword.html',
             controller: 'ChoosePasswordCtrl'
         })
+        .when('/signIn',{
+            templateUrl:'views/signin.html'
+        })
+        .when('dashboard',{
+            templateUrl:'views/dashboard'
+        })
       .otherwise({
         redirectTo: '/'
       });

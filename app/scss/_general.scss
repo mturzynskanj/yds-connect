@@ -1,5 +1,8 @@
+
+
 body {
 	background-color: $color-brown3;
+
 }
 
 .entypo {
@@ -12,6 +15,10 @@ body {
 	color: $color-grey1;
 	text-align: center;
 	font-style: italic;
+}
+
+.navbar + section{
+  margin-top:55px;
 }
 
 p {
@@ -47,3 +54,4 @@ p {
 label {
 	font-weight: normal;
 }
+

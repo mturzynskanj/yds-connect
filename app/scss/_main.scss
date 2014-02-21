@@ -21,3 +21,57 @@
 		padding: 0 10px;
 	}
 }
+
+
+.dashboard-page{
+  .items{
+    margin-top:5px;
+    position:relative;
+  }
+  .item{
+     width:33.33%;
+     padding:10px;
+     border:1px solid $color-grey2;
+     box-sizing:border-box;
+     float:left;
+     height:120px;
+
+  }
+
+  .dim{
+    width:25px;
+    height:25px;
+    position:abolute;
+    top:120px;
+    left:33.33px;
+  }
+
+  .tl{
+    border-right:none;
+
+
+  }
+  .tc{
+    border-right:none;
+
+  }
+
+  .tr{
+
+  }
+
+  .bl{
+    border-top:none;
+    border-right:none;
+  }
+
+  .bc{
+    border-top:none;
+    border-right:none;
+  }
+
+  .br{
+    border-top:none;
+  }
+
+}
